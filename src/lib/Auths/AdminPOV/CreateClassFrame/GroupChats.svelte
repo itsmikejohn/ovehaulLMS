@@ -68,8 +68,8 @@
                 <Buttons Title="Back" on:click={() => $adminState.viewChat = false}/>
             </div>
 
-            <submain class="max-h-[70vh] border-2 border-blue-500 overflow-y-scroll">
-
+            <submain class="max-h-[40vh] sm:max-h-[70vh] border-2 border-blue-500 overflow-y-scroll">
+                <!--Group chatsss-->
                 {#each $adminState.chatsArray as chatInfos}
                     {#if chatInfos.targetUID === classInfo.originUID}
                         <main class="p-2 flex flex-col gap-1 break-words">

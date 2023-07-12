@@ -94,7 +94,7 @@
             </submain>
 
             <!--Comment panel here-->
-            <main class="max-h-[55vh] overflow-y-scroll p-2">
+            <main class="max-h-[40vh] sm:max-h-[60vh] overflow-y-scroll p-2">
                 {#each $adminState.commentsArray as comment}
                     <!--Compare the target comment to db to promp in frontend-->
                     {#if comment.targetUID === announcement.originUID}

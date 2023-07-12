@@ -147,7 +147,7 @@
             </div>
             
             <!--Rendered enrolled students-->
-            <submain class="max-h-[70vh] overflow-y-scroll">
+            <submain class="max-h-[40vh] sm:max-h-[60vh] overflow-y-scroll">
                 {#each $adminState.enStudArray as enrolledInfo, index}
                     {#if enrolledInfo.targetClassUID === classInfo.originUID}
                     <div class="border-2 border-blue-500 mt-2">
