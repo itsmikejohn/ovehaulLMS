@@ -45,7 +45,7 @@
 </main>
 
 {#if sliderLogic}
-    <main class="fixed left-0 top-0 bottom-0 w-[70%] sm:w-[30%] md:w-[17%] bg-[#3c3965]" in:fly={{x:-100, duration:700}}>
+    <main class="fixed left-0 top-0 bottom-0 w-[70%] sm:w-[30%] md:w-[20%] bg-[#3c3965]" in:fly={{x:-100, duration:700}}>
         <div class="p-2">
             <button class="transition-all flex flex-col gap-1 px-2 py-4 rounded-full hover:bg-blue-500 float-right"
             on:click={showSlider}
@@ -55,7 +55,7 @@
             </button>
         </div>
 
-        <div class="flex gap-2 items-center p-2 border-2 mt-10 mx-2">
+        <div class="flex gap-2 items-center p-2 border-2 mt-10 mx-2 flex-wrap">
             <img src={$auth.currentUser?.photoURL} alt="loading" class="w-10"/>
             <div class="text-white font-serif">
                 <p>{$auth.currentUser?.displayName}</p>
