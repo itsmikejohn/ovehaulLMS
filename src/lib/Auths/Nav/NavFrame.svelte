@@ -36,7 +36,9 @@
     </div>
 
     <div class="mr-5">
-        <Buttons Title="Logout"
+        <Buttons 
+        Color="bg-red-500"
+        Title="Logout"
         on:click={() => signOut($auth)}
         />
     </div>

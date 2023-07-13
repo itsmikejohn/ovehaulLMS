@@ -38,7 +38,28 @@ export const adminState = writable({
         powerpoint: "https://www.svgrepo.com/show/452069/ms-powerpoint.svg",
         pdf: "https://www.svgrepo.com/show/484943/pdf-file.svg",
         excel: "https://www.svgrepo.com/show/373590/excel2.svg",
-    }
+    },
+
+
+    //quiz game state
+    quizTitle: "",
+    questionTitle: "",
+    correctAnswer: 0,
+    selectionOne: "",
+    selectionTwo: "",
+    selectionThree: "",
+    selectionFour: "",
+    
+    quizArrayPack: [],
+    showCreateQuiz: false,
+    showNextPush: false,
+
+    fetchQuizArray: [],
+    quizComparison: 0.1,
+    showCorrectLogic: false,
+    showIncorrectLogic: false,
+    scoreArray: [],
+
 });
 
 export const studentState = writable({

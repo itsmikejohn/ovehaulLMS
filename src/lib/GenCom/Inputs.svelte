@@ -13,21 +13,21 @@
 {#if Type === "text"}
     <p class="">
         <b class="font-serif {Color}">{Label}</b>
-        <input type="text" placeholder={Placeholder} bind:value={Bindthis} class="w-full px-2 py-1 bg-slate-200 focus:outline-none" />
+        <input on:keyup type="text" placeholder={Placeholder} bind:value={Bindthis} class="w-full px-2 py-1 bg-slate-200 focus:outline-none" />
     </p>
 {:else if Type === "email"}
     <p class="">
         <b class="font-serif {Color}">{Label}</b>
-        <input type="text" placeholder={Placeholder} bind:value={Bindthis} class="w-full px-2 py-1 bg-slate-200 focus:outline-none" />
+        <input on:keyup type="text" placeholder={Placeholder} bind:value={Bindthis} class="w-full px-2 py-1 bg-slate-200 focus:outline-none" />
     </p>
 {:else if Type === "password"}
     <p class="">
         <b class="font-serif {Color}">{Label}</b>
-        <input type="password" placeholder={Placeholder} bind:value={Bindthis} class="w-full px-2 py-1 bg-slate-200 focus:outline-none" />
+        <input on:keyup type="password" placeholder={Placeholder} bind:value={Bindthis} class="w-full px-2 py-1 bg-slate-200 focus:outline-none" />
     </p>
 {:else if Type === "number"}
     <p class="">
         <b class="font-serif {Color}">{Label}</b>
-        <input type="number" placeholder={Placeholder} bind:value={Bindthis} class="w-full px-2 py-1 bg-slate-200 focus:outline-none" />
+        <input on:keyup type="number" placeholder={Placeholder} bind:value={Bindthis} class="w-full px-2 py-1 bg-slate-200 focus:outline-none" />
     </p>
 {/if}

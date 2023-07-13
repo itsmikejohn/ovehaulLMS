@@ -5,6 +5,7 @@
 	import BackpackFrame from "./BackpackFrame/BackpackFrame.svelte";
     import MyClassFrame from "./MyClassFrame/MyClassFrame.svelte";
 	import NotificationFrame from "./NotificationFrame/NotificationFrame.svelte";
+	import QuizFrame from "./QuizFrame/QuizFrame.svelte";
 
 </script>
 
@@ -15,5 +16,7 @@
         <NotificationFrame />
     {:else if $staticStates.activeItem === "Backpack"}
         <BackpackFrame />
+    {:else if $staticStates.activeItem === "Quiz"}
+        <QuizFrame />
     {/if}
 </main>
