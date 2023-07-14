@@ -3,6 +3,7 @@
 
     import { staticStates } from "$lib/States/universalStates";
 	import BackpackFrame from "./BackpackFrame/BackpackFrame.svelte";
+	import CompilationLinkFrame from "./CompilationLinkFrame/CompilationLinkFrame.svelte";
     import MyClassFrame from "./MyClassFrame/MyClassFrame.svelte";
 	import NotificationFrame from "./NotificationFrame/NotificationFrame.svelte";
 	import QuizFrame from "./QuizFrame/QuizFrame.svelte";
@@ -18,5 +19,7 @@
         <BackpackFrame />
     {:else if $staticStates.activeItem === "Quiz"}
         <QuizFrame />
+    {:else if $staticStates.activeItem === "Compilation Link"}
+        <CompilationLinkFrame />
     {/if}
 </main>

@@ -25,7 +25,7 @@
 </script>
 
 <main class="fixed w-full left-0 top-0 bg-[#3c3965] p-2 flex items-center">
-    <div class="w-full">
+    <div class="">
         <button class="transition-all flex flex-col gap-1 p-2 rounded-full hover:bg-blue-500"
         on:click={showSlider}
         >
@@ -34,13 +34,18 @@
             <div class="w-6 border-[0.01rem] border-white"></div>
         </button>
     </div>
+    <div class="w-full">
+        <p class="text-white font-serif text-left ml-5">{$staticStates.activeItem}</p>
+    </div>
 
-    <div class="mr-5">
-        <Buttons 
-        Color="bg-red-500"
-        Title="Logout"
-        on:click={() => signOut($auth)}
-        />
+    <div class="w-full ">
+        <div class="mr-5 max-w-fit float-right">
+            <Buttons 
+            Color="bg-red-500"
+            Title="Logout"
+            on:click={() => signOut($auth)}
+            />
+        </div>
     </div>
 </main>
 

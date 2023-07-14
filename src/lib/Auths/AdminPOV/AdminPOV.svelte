@@ -2,8 +2,10 @@
     import { staticStates } from "$lib/States/universalStates";
 	import AnnouncementFrame from "./AnnouncementFrame/AnnouncementFrame.svelte";
 	import CreateClassFrame from "./CreateClassFrame/CreateClassFrame.svelte";
+	import CreateCompilationFrame from "./CreateCompilationFrame/CreateCompilationFrame.svelte";
 	import CreateQuizFrame from "./CreateQuizFrame/CreateQuizFrame.svelte";
 	import UploadAssignmentFrame from "./UploadAssignmentFrame/UploadAssignmentFrame.svelte";
+
 </script>
 
 <main>
@@ -15,5 +17,7 @@
         <UploadAssignmentFrame />
     {:else if $staticStates.activeItem === "Create Quiz"}
         <CreateQuizFrame />
+    {:else if $staticStates.activeItem === "Create Compilation"}
+        <CreateCompilationFrame />
     {/if}
 </main>

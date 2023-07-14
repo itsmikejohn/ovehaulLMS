@@ -3,7 +3,7 @@ import { writable } from "svelte/store";
 export const adminKey = writable("H0ryIenlUBgAaElh2Jf8TtBXqZ42");
 
 export const adminState = writable({
-    navArray: ["Create Class", "Announcement", "Upload Assignment", "Create Quiz"],
+    navArray: ["Create Class", "Announcement", "Upload Assignment", "Create Quiz", "Create Compilation"],
 
     //create class state
     createClassLogic: false,
@@ -60,10 +60,17 @@ export const adminState = writable({
     showIncorrectLogic: false,
     scoreArray: [],
 
+    //create link compilation
+    showRepoLogic: false,
+    linkDescription: "",
+    linkTitle: "",
+    linkSrc: "",
+    createdLinksArray: [],
+
 });
 
 export const studentState = writable({
-    navArray: ["My Class", "Notification", "Backpack", "Quiz"],
+    navArray: ["My Class", "Notification", "Backpack", "Quiz", "Compilation Link"],
 });
 
 export const staticStates = writable({
