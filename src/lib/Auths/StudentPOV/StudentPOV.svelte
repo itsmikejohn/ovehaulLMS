@@ -19,7 +19,7 @@
         <BackpackFrame />
     {:else if $staticStates.activeItem === "Quiz"}
         <QuizFrame />
-    {:else if $staticStates.activeItem === "Compilation Link"}
+    {:else if $staticStates.activeItem === "Online Compiler Links"}
         <CompilationLinkFrame />
     {/if}
 </main>

@@ -17,7 +17,7 @@
         <UploadAssignmentFrame />
     {:else if $staticStates.activeItem === "Create Quiz"}
         <CreateQuizFrame />
-    {:else if $staticStates.activeItem === "Create Compilation"}
+    {:else if $staticStates.activeItem === "Online Compiler Links"}
         <CreateCompilationFrame />
     {/if}
 </main>
