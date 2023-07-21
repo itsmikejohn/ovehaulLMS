@@ -1,6 +1,6 @@
 import { writable } from "svelte/store";
 
-export const adminKey = writable("H0ryIenlUBgAaElh2Jf8TtBXqZ42");
+export const adminKey = writable("ACqkquUj8sYHd0F4IjtMwwJ8Phb2");
 
 export const adminState = writable({
     navArray: ["Create Class", "Announcement", "Upload Assignment", "Create Quiz", "Create Compilation"],
