@@ -78,10 +78,11 @@
                     <p class="text-green-500 text-4xl text-center p-2">{score.score}%</p>
                 {/if}
             {/each}
-
+            
             <submain class="flex gap-1">
-                <Buttons Title="Start" on:click={() => startQuiz(quiz, outerIndex)}/>
-                
+                {#if !(quiz[$auth.currentUser.uid] === $auth.currentUser.uid)}
+                    <Buttons Title="Start" on:click={() => startQuiz(quiz, outerIndex)}/>
+                {/if}
                     {#if $auth.currentUser.uid === $adminKey}
                         <Buttons Color="bg-red-500" 
                         Title="Delete"
@@ -89,6 +90,7 @@
                         />
                     {/if}
             </submain>
+            
             
         </div>
 
