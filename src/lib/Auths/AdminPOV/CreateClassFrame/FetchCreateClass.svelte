@@ -78,7 +78,8 @@
     
                 <div class="">
                     <p class="font-semibold">Module:</p>
-                    <a href={classInfo.moduleLink} target="_blank" class="underline text-blue-500">{classInfo.moduleTitle}</a>
+                    <a href={classInfo.modulelink} target="_blank" class="underline text-blue-500">{classInfo.moduleTitle}</a>
+                    
                 </div>
             </submain>
 

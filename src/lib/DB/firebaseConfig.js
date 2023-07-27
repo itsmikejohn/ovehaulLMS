@@ -1,3 +1,4 @@
+// @ts-nocheck
 
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
@@ -21,5 +22,6 @@ import { writable } from "svelte/store";
 export const auth = writable(getAuth(app));
 export const db = writable(getFirestore(app));
 export const storage = writable(getStorage(app));
+
 
 
