@@ -22,6 +22,7 @@ import { writable } from "svelte/store";
 export const auth = writable(getAuth(app));
 export const db = writable(getFirestore(app));
 export const storage = writable(getStorage(app));
+//www.youtube.com/@mikeSharesCode
 
 
 
